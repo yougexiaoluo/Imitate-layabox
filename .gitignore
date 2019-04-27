@@ -1,2 +1,5 @@
 .sass-cache/
 *.css.map
+*.txt
+/node_modules/
+./src/sass
