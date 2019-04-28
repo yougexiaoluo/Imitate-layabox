@@ -1,0 +1,107 @@
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  #main .engine {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  #main .engine .container .engine-l h2 {
+    font-size: 30px;
+  }
+  #main .engine .container .engine-l h3 {
+    font-size: 18px;
+    padding-bottom: 80px;
+  }
+  #main .engine .container .engine-l .engine-item {
+    padding: 0;
+  }
+  #main .engine .container .engine-r {
+    display: none;
+  }
+  #main .advantage {
+    padding-top: 0;
+  }
+  #main .advantage .container .advantage-l {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  #main .advantage .container .advantage-l img {
+    width: 100%;
+  }
+  #main .advantage .container .advantage-r {
+    padding-left: 0;
+  }
+  #main .advantage .container .advantage-r h6 {
+    font-size: 30px;
+    text-align: center;
+  }
+  #main .layabox-product-family {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #main .layabox-product-family .container .family-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  #main .layabox-product-family .container .product-item:nth-child(2n) {
+    padding-left: 15px;
+  }
+  #main .layabox-product-family .container .product-item .media-body {
+    padding-left: 0;
+  }
+  #main .layabox-product-family .container .product-item .media-body p {
+    width: 100%;
+  }
+  #main .game .container .title {
+    margin-bottom: 20px;
+  }
+  #main .game .container .title h5 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #main .game .container .game-item-wrap .left {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  #main .game .container .game-item-wrap .left img {
+    border-radius: 5px;
+  }
+  #main .game .container .game-item-wrap .right {
+    margin-top: 40px;
+    width: 100%;
+  }
+  #main .game .container .game-item-wrap .right .game-item {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  #main .game .container .game-item-wrap .right .game-item img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+  #main .friends-link .partner {
+    font-size: 24px;
+  }
+  #main .friends-link .link {
+    margin-bottom: 10px;
+  }
+
+  footer .container-fluid .footer-left {
+    padding: 0;
+  }
+  footer .container-fluid .footer-left .footer-link {
+    padding: 0;
+  }
+  footer .container-fluid .footer-left .copyright {
+    padding: 0;
+  }
+  footer .container-fluid .footer-right {
+    padding: 0;
+    margin-top: 35px;
+  }
+  footer .container-fluid .footer-right .fllow li a {
+    margin: 0 auto;
+  }
+  footer .container-fluid .footer-right .fllow li a:hover:after {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -210,7 +210,11 @@
     }
   }
 }
+
 // 底部二维码路径报错
 footer .fllow li a:after {
   @include setBgc(url('../assets/images/public/footer-qr-01.png'));
 }
+
+// 适配文件
+@import './common/_media';

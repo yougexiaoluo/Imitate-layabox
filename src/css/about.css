@@ -290,4 +290,28 @@ footer .fllow li a:after {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1000px) {
+  header .navbar-default .navbar-nav li.more {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .navbar-default .navbar-nav li.toggle {
+    display: none;
+  }
+
+  main .engine .container .engine-r {
+    padding-top: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .navbar-default .navbar-nav li.more {
+    display: none;
+  }
+
+  header .navbar-default .navbar-nav li.toggle {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=about.css.map */
