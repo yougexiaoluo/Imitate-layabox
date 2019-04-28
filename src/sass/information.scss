@@ -1,0 +1,204 @@
+@charset 'utf-8';
+@import './common/_public';
+
+
+// 主体部分
+#main {
+
+  // 动态新闻
+  .information {
+    padding-top: 41px;
+
+    .container {
+      margin-bottom: 87px;
+
+      // 标题
+      .information-title {
+        font-size: 30px;
+        color: $orange;
+        margin-top: 0;
+        margin-bottom: 39px;
+      }
+
+      // 新闻动态项
+      .information-item li {
+        padding: 0;
+        @include notLastD(30px);
+        width: 302px;
+
+        a {
+          display: block;
+          height: 100%;
+          overflow: hidden;
+          position: relative;
+
+          // 显示描述文本
+          &:hover .text {
+            transform: translateY(0);
+          }
+
+          img {
+            width: 100%;
+          }
+
+          .text {
+            padding: 14px 18px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .6);
+            color: $white;
+            font-size: 14px;
+            transform: translateY(100%);
+            transition: transform .35s linear;
+          }
+        }
+      }
+    }
+
+  }
+
+  // news-list
+  .news-wrap {
+    .container {
+      ul {
+        padding-bottom: 70px;
+
+        .news-item {
+          &:not(:last-of-type) {
+            margin-bottom: 38px;
+          }
+
+          // 媒体对象
+          .media {
+
+            // 左侧图片
+            .media-left {
+              padding: 5px;
+              width: 221px;
+              border: 1px solid #ddd;
+              @include setBDradius(5px);
+
+              img {
+                width: 100%;
+              }
+            }
+
+            // 媒体对象内容
+            .media-body {
+              padding-left: 30px;
+              width: calc(100% - 221px);
+
+              // 标题
+              h4 {
+                margin-bottom: 17px;
+                font-size: 18px;
+                color: #666;
+              }
+
+              .time {
+                padding-bottom: 22px;
+
+                span {
+                  color: $gray-color;
+                }
+              }
+
+              // 描述
+              .dec {
+                margin-bottom: 16px;
+                font-size: 14px;
+                color: $gray-color;
+                line-height: 25px;
+                text-align: justify;
+              }
+
+              // btn 
+              .btn-wrap {
+                width: 100%;
+
+                a {
+                  display: inline-block;
+                  width: 98px;
+                  height: 32px;
+                  @include setBDradius(15px);
+                  border: 1px solid #ff6900;
+                  color: #ff6900;
+                  overflow: hidden;
+                  // 添加交互
+                  // &:hover{
+                  //   box-shadow: none;
+                  //   background-color: #f54e00;
+                  // }
+                }
+              }
+            }
+          }
+
+
+
+          // 激活类 -- 暂时这样写，往后需改进
+          &.active {
+            .media .media-body h4 {
+              color: #ff6900;
+            }
+
+            .btn-wrap a.btn {
+              text-decoration: none;
+              background-color: #ff6900;
+              color: $white;
+            }
+          }
+        }
+      }
+
+    }
+
+    // 分页器 
+    nav {
+      border-top: 1px dashed #d4d4d4;
+      text-align: center;
+
+      .pagination {
+        padding-top: 36px;
+        padding-bottom: 25px;
+        margin: 0;
+
+        li {
+          font-size: 12px;
+
+          a {
+            padding: 10px 14px 12px;
+            color: $gray-color;
+
+            &:focus {
+              background-color: #e34637;
+              color: $white;
+            }
+          }
+
+          &.active {
+            a {
+              background-color: #e34637;
+              color: $white;
+              border-color: #ddd;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+// 底部二维码路径报错
+footer .fllow li a:after {
+  @include setBgc(url('../assets/images/public/footer-qr-01.png'));
+}

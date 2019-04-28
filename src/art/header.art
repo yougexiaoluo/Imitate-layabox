@@ -1,0 +1,50 @@
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo navbar-brand" href="#" title="点击了解更多">
+            <img src="./src/assets/images/public/LAYABOX_Logo.png" alt="">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#">Laya家族</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">新闻动态</a></li>
+            <li class="toggle"><a href="#">开发者中心</a></li>
+            <li class="toggle"><a href="#">开发者社区</a></li>
+            <li class="toggle"><a href="#">开放平台</a></li>
+            <li class="toggle"><a href="#">关于我们</a></li>
+            <li class="dropdown more">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">更多 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">开发者中心</a></li>
+                <li><a href="#">开发者社区</a></li>
+                <li><a href="#">开放平台</a></li>
+                <li><a href="#">关于我们</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Language <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">简体中文</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>

@@ -1,0 +1,27 @@
+/* 排除最后一个元素 -- 设置外边距 */
+@mixin notLastD($size) {
+  &:not(:last-of-type) {
+    margin-right: $size;
+  }
+}
+
+// 设置元素的圆角
+@mixin setBDradius($r:50%) {
+  -webkit-border-radius: $r;
+  border-radius: $r;
+}
+ 
+// 设置元素的内边距
+@mixin setPadding-b($mb) {
+  &:not(:last-of-type) {
+    margin-bottom: $mb;
+  }
+}
+
+// 设置背景
+@mixin  setBgc($path,$position:0 0,$size:contain,$repeat: no-repeat) {
+  background-image: $path;
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+}

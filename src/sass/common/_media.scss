@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+// 屏幕适配
+@media screen and (min-width: 1000px) {
+  header .navbar-default .navbar-nav li.more {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+ 
+  // header
+  header .navbar-default .navbar-nav li.toggle {
+    display: none;
+  }
+
+  // layabox engine
+  main .engine .container .engine-r {
+    padding-top: 250px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  header .navbar-default .navbar-nav li.more {
+    display: none;
+  }
+
+  header .navbar-default .navbar-nav li.toggle {
+    display: block;
+  }
+}
