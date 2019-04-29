@@ -10,7 +10,7 @@
 
 
 @media screen and (max-width: 1000px) {
- 
+
   // header
   header .navbar-default .navbar-nav li.toggle {
     display: none;
@@ -31,5 +31,52 @@
 
   header .navbar-default .navbar-nav li.toggle {
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+  // footer
+  footer {
+    .container-fluid {
+
+      .footer-left {
+        padding: 0;
+        width: 100%;
+        .footer-link {
+          padding: 0;
+          display: flex;
+          justify-content: center;
+        }
+
+        .copyright {
+          padding: 0;
+          text-align: center;
+        }
+      }
+
+      .footer-right {
+        padding: 0;
+        margin:35px auto 0px;
+        float: none;
+        .fllow {
+          display: flex;
+          justify-content: space-between;
+          
+          li {
+            a {
+              margin: 0 auto;
+
+              &:hover {
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
   }
 }

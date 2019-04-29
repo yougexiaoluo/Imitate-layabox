@@ -20,7 +20,7 @@
     }
   }
 
-  // engine area
+  // engine area 
 
   .engine {
     background-color: #fbfaf7;
@@ -95,7 +95,7 @@
     }
 
   }
-
+ 
   // layabox advantage 
   .advantage {
     padding-top: 114px;
@@ -138,7 +138,9 @@
           background-color: $green;
           text-align: center;
           line-height: 54px;
-
+          &:hover {
+            text-decoration: none;
+          }
           i {
             font-size: 26px;
             color: $white;
@@ -228,10 +230,11 @@
     // 标题
     .title {
       h5 {
-        font-size: 35px;
-        color: #2a2a2a;
         margin-top: 0;
         margin-bottom: 45px;
+        font-size: 35px;
+        color: #2a2a2a;
+        text-align: left;
       }
 
       a {
@@ -249,13 +252,13 @@
 
       // 左边 视频
       .left {
-        padding: 0;
-
+        // padding: 0;
+        padding-left: 15px;
         width: 370px;
-        @include setBDradius(5px);
         overflow: hidden;
-
+        
         img {
+          @include setBDradius(5px);
           width: 100%;
         }
       }
@@ -270,10 +273,13 @@
           padding-left: 23px;
 
           img {
+            // margin: 0 auto 7px;
             margin-bottom: 7px;
+            // display: block;
           }
 
           a {
+            display: block;
             color: #2a2a2a;
 
             &:hover {
@@ -283,7 +289,7 @@
         }
       }
     }
-  }
+  } 
 
   // 友情链接 
   .friends-link {
@@ -308,7 +314,6 @@
 
       a {
         display: block;
-        width: 150px;
         border: 1px solid #ddd;
         @include setBDradius(5px);
         overflow: hidden;
@@ -322,4 +327,4 @@
 }
 
 // 适配文件
-@import './common/_media';
+@import './common/_media'; 

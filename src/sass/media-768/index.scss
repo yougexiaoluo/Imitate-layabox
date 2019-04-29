@@ -1,11 +1,34 @@
 @charset 'utf-8';
 
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .engine-l {
+
+    h2,
+    h3 {
+      text-align: center;
+    }
+  }
+
+  #main .layabox-product-family .container .product-item:nth-child(2n) {
+    padding-left: 30px;
+  }
+
+  #main .layabox-product-family .container .product-item .media-body p {
+    width: unset;
+  }
+
+  #main .layabox-product-family .container .product-item .media-body {
+    padding-left: 30px;
+  }
+} 
+ 
+
+@media screen and (max-width: 768px) and (min-width:320px) {
 
   // 头部
   header {}
 
-  // 主体部分
+  // 主体部分 
   #main {
 
     // 轮播图
@@ -22,11 +45,14 @@
         .engine-l {
           h2 {
             font-size: 30px;
+            text-align: center;
           }
 
           h3 {
-            font-size: 18px;
             padding-bottom: 80px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.5em;
           }
 
           // 每项
@@ -59,7 +85,6 @@
         // 图片
         .advantage-l {
           text-align: center;
-          padding-bottom: 60px;
 
           img {
             width: 100%;
@@ -69,6 +94,7 @@
         // 文本
         .advantage-r {
           padding-left: 0;
+          padding-top: 60px;
 
           h6 {
             font-size: 30px;
@@ -91,9 +117,17 @@
           text-align: center;
         }
 
+        .product-item:not(:last-of-type) {
+          margin-bottom: 40px;
+        }
+
         // 家族产品
         .product-item:nth-child(2n) {
           padding-left: 15px;
+        }
+
+        .product-item h6 {
+          font-size: 26px;
         }
 
         // 媒体对象
@@ -104,6 +138,8 @@
             width: 100%;
           }
         }
+
+
       }
     }
 
@@ -116,8 +152,15 @@
           margin-bottom: 20px;
 
           h5 {
-            font-size: 24px;
             margin-bottom: 20px;
+            padding: 0;
+            font-size: 20px;
+            color: #0079d7;
+            text-align: left;
+          }
+
+          a {
+            padding: 0;
           }
         }
 
@@ -125,25 +168,32 @@
         .game-item-wrap {
           .left {
             padding: 0 15px;
-            margin: 0 auto;
+            margin-bottom: 40px;
+            // margin: 0 auto 40px;
+            // width: 100%;
 
             img {
               border-radius: 5px;
+              width: 100%;
             }
           }
 
           // right 
           .right {
-            margin-top: 40px;
+            // margin-top: 40px;
             width: 100%;
+            // 若这里出现滚动条，那么会出现不好的用户体验，滚动的时候需要将里面内容滚动完之后才能继续浏览下面的内容
+            // height: 400px;
+            // overflow-y: scroll;
+            // overflow-x: hidden;
 
             .game-item {
               padding: 0;
               margin-bottom: 20px;
 
               img {
-                display: block;
-                margin: 0 auto 10px;
+                // display: block;
+                // margin: 0 auto 10px;
               }
             }
           }
@@ -155,49 +205,30 @@
     .friends-link {
       .partner {
         font-size: 24px;
+        text-align: center;
       }
 
       .link {
         margin-bottom: 10px;
-      }
-    }
-  }
 
-  // footer
-  footer {
-    .container-fluid {
+        a {
+          margin: 0 auto;
 
-      .footer-left {
-        padding: 0;
-
-        .footer-link {
-          padding: 0;
-        }
-
-        .copyright {
-          padding: 0;
-        }
-      }
-
-      .footer-right {
-        padding: 0;
-        margin-top: 35px;
-
-        .fllow {
-          li {
-            a {
-              margin: 0 auto;
-
-              &:hover {
-                &:after {
-                  display: none;
-                }
-              }
-            }
+          img {
+            width: 100%;
           }
         }
       }
     }
+  }
 
+ 
+}
+
+
+// 友情链接，特殊处理
+@media screen and (max-width: 766px) and (min-width: 425px) {
+  #main .friends-link .link a {
+    width: 200px;
   }
 }

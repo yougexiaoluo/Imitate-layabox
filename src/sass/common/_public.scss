@@ -4,6 +4,20 @@
 // 暂时为body添加一个padding-top
 body {
   padding-top: 50px;
+
+  // 滚动条样式 -- 有兼容性，只有谷歌浏览器能支持
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    // 轨道颜色 
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #222;
+  }
 }
 
 // 颜色  
@@ -112,19 +126,25 @@ footer {
 
     // 左侧
     .footer-left {
-      .footer-link li {
-        @include notLastD(14px);
+      padding: 0;
 
-        a:hover {
-          color: $white;
-          text-decoration: underline;
+      .footer-link {
+        padding: 0;
+
+        li {
+          @include notLastD(14px);
+
+          a:hover {
+            color: $white;
+            text-decoration: underline;
+          }
         }
-
       }
 
       // 版权
       .copyright {
         margin-top: 13px;
+        padding: 0;
         font-size: 12px;
         color: #a1a3ab;
       }
