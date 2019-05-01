@@ -1,0 +1,234 @@
+@charset 'utf-8';
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .engine-l {
+
+    h2,
+    h3 {
+      text-align: center;
+    }
+  }
+
+  #main .layabox-product-family .container .product-item:nth-child(2n) {
+    padding-left: 30px;
+  }
+
+  #main .layabox-product-family .container .product-item .media-body p {
+    width: unset;
+  }
+
+  #main .layabox-product-family .container .product-item .media-body {
+    padding-left: 30px;
+  }
+}  
+ 
+
+@media screen and (max-width: 768px) and (min-width:320px) {
+
+  // 头部
+  header {}
+
+  // 主体部分 
+  #main {
+
+    // 轮播图
+    .banner {}
+
+    // layaFlash 引擎
+    .engine {
+      padding-top: 50px;
+      padding-bottom: 0;
+
+      .container {
+
+        // 左边内容
+        .engine-l {
+          h2 {
+            font-size: 30px;
+            text-align: center;
+          }
+
+          h3 {
+            padding-bottom: 80px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.5em;
+          }
+
+          // 每项
+          .engine-item {
+            padding: 0;
+
+            // 看情况去是否以 ... 的方式去显示
+            p {
+              // text-overflow: ellipsis;
+              // white-space: nowrap;
+              // overflow: hidden;
+            }
+          }
+        }
+
+        // 隐藏右边的图片
+        .engine-r {
+          display: none;
+        }
+      }
+    }
+
+    // layabox 优势
+
+    .advantage {
+      padding-top: 0;
+
+      .container {
+
+        // 图片
+        .advantage-l {
+          text-align: center;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        // 文本
+        .advantage-r {
+          padding-left: 0;
+          padding-top: 60px;
+
+          h6 {
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    // 产品家族
+    .layabox-product-family {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .container {
+
+        // title
+        .family-title {
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .product-item:not(:last-of-type) {
+          margin-bottom: 40px;
+        }
+
+        // 家族产品
+        .product-item:nth-child(2n) {
+          padding-left: 15px;
+        }
+
+        .product-item h6 {
+          font-size: 26px;
+        }
+
+        // 媒体对象
+        .product-item .media-body {
+          padding-left: 0;
+
+          p {
+            width: 100%;
+          }
+        }
+
+
+      }
+    }
+
+    // 引擎精彩游戏
+    .game {
+      .container {
+
+        // 精彩游戏 title
+        .title {
+          margin-bottom: 20px;
+
+          h5 {
+            margin-bottom: 20px;
+            padding: 0;
+            font-size: 20px;
+            color: #0079d7;
+            text-align: left;
+          }
+
+          a {
+            padding: 0;
+          }
+        }
+
+        //  游戏案例 left
+        .game-item-wrap {
+          .left {
+            padding: 0 15px;
+            margin-bottom: 40px;
+            // margin: 0 auto 40px;
+            // width: 100%;
+
+            img {
+              border-radius: 5px;
+              width: 100%;
+            }
+          }
+
+          // right 
+          .right {
+            // margin-top: 40px;
+            width: 100%;
+            // 若这里出现滚动条，那么会出现不好的用户体验，滚动的时候需要将里面内容滚动完之后才能继续浏览下面的内容
+            // height: 400px;
+            // overflow-y: scroll;
+            // overflow-x: hidden;
+
+            .game-item {
+              padding: 0;
+              margin-bottom: 20px;
+
+              img {
+                // display: block;
+                // margin: 0 auto 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 友情链接
+    .friends-link {
+      .partner {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .link {
+        margin-bottom: 10px;
+
+        a {
+          margin: 0 auto;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+ 
+}
+
+
+// 友情链接，特殊处理
+@media screen and (max-width: 766px) and (min-width: 425px) {
+  #main .friends-link .link a {
+    width: 200px;
+  }
+}
