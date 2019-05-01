@@ -230,7 +230,7 @@ footer .container-fluid .footer-right .fllow li a i {
 #main .advantage .advantage-r .media:not(:last-of-type) {
   margin-bottom: 14px;
 }
-#main .advantage .advantage-r .media a {
+#main .advantage .advantage-r .media span {
   display: block;
   width: 54px;
   height: 54px;
@@ -240,10 +240,7 @@ footer .container-fluid .footer-right .fllow li a i {
   text-align: center;
   line-height: 54px;
 }
-#main .advantage .advantage-r .media a:hover {
-  text-decoration: none;
-}
-#main .advantage .advantage-r .media a i {
+#main .advantage .advantage-r .media span i {
   font-size: 26px;
   color: #fff;
 }
@@ -329,7 +326,7 @@ footer .container-fluid .footer-right .fllow li a i {
   width: calc(100% - 370px);
 }
 #main .game .game-item-wrap .right .game-item {
-  margin-bottom: 33px;
+  margin-bottom: 15px;
   padding-left: 23px;
 }
 #main .game .game-item-wrap .right .game-item img {

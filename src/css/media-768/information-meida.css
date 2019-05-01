@@ -1,0 +1,54 @@
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #main .information .container .information-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  #main .information .container .information-item li {
+    max-width: 302px;
+  }
+  #main .information .container .information-item li a .text {
+    font-size: 12px;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  #main .information .container .information-item li {
+    max-width: 302px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #main .information .container .information-item li:not(:last-of-type) {
+    margin: 0 auto 30px;
+  }
+  #main .information .container .information-item li a .text {
+    transform: translateY(0);
+    font-size: 12px;
+  }
+
+  #main .news-wrap .container ul .news-item .media {
+    padding: 0 15px;
+  }
+  #main .news-wrap .container ul .news-item .media .media-left {
+    max-width: 211px;
+    width: 40vw;
+  }
+  #main .news-wrap .container ul .news-item .media .media-body {
+    width: calc(100% - 40vw);
+    word-break: break-all;
+    padding-right: 0;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  #main .news-wrap .container ul .news-item .media .media-body h4 {
+    margin-bottom: 0;
+  }
+
+  #main .news-wrap nav .pagination li a {
+    padding: 6px 8px 6px;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=information-meida.css.map */

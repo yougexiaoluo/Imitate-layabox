@@ -1,0 +1,91 @@
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #main .hot-game .container .hot-item .text .title {
+    text-align: left;
+  }
+
+  #main .hot-game .container .hot-item .icon {
+    padding-top: 70px;
+  }
+
+  #main .hot-game .container .hot-item .text .dec {
+    text-align: justify;
+    text-indent: 2em;
+  }
+
+  #main .more-cases .container h2 {
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  #main .more-cases .container .case-w .case-item {
+    padding: 0 15px 0;
+  }
+  #main .more-cases .container .case-w .case-item:hover {
+    box-shadow: none;
+  }
+  #main .more-cases .container .case-w .case-item p {
+    display: none;
+  }
+  #main .more-cases .container .case-w .case-item .row {
+    width: 100%;
+    margin: 0;
+  }
+  #main .more-cases .container .case-w .case-item .row .col-sm-6 {
+    width: 100%;
+    padding: 0;
+  }
+  #main .more-cases .container .case-w .case-item .row .col-sm-6 img {
+    width: 100%;
+  }
+
+  footer .container-fluid .footer-left .footer-link {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .container-fluid .copyright {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  #main .hot-game .container {
+    padding-top: 70px;
+  }
+
+  #main .hot-game .container .hot-item .icon {
+    display: none;
+  }
+
+  #main .hot-game .container .hot-item .text .dec {
+    text-align: justify;
+    text-indent: 2em;
+  }
+
+  #main .container h2.title {
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  #main .more-cases .container .case-w .case-item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #main .more-cases .container .case-w .case-item:hover {
+    box-shadow: none;
+  }
+  #main .more-cases .container .case-w .case-item p {
+    display: none;
+  }
+
+  #main .more-cases {
+    margin-top: 60px;
+  }
+
+  #main .more-cases .container {
+    padding-bottom: 50px;
+  }
+}
+
+/*# sourceMappingURL=game-media.css.map */

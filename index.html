@@ -19,13 +19,15 @@
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./src/css/index.css">
+  <!-- 媒体查询文件  <= 768px -->
+  <link rel="stylesheet" href="./src/css/media-768/index.css">
   <base target="_self">
 </head>
 
 <body>
   <!-- S header navbar -->
   <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default wrap_1000">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -38,29 +40,29 @@
             <span class="icon-bar"></span>
           </button>
           <!-- logo -->
-          <a class="logo navbar-brand" href="#" title="点击了解更多">
+          <a class="logo navbar-brand" href="javascript:;" title="点击了解更多">
             <img src="./src/assets/images/public/LAYABOX_Logo.png" alt="">
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#" class="active">首页</a></li>
-            <li><a href="#">Laya家族</a></li>
-            <li><a href="#">游戏</a></li>
-            <li><a href="#">新闻动态</a></li>
-            <li class="toggle"><a href="#">开发者中心</a></li>
-            <li class="toggle"><a href="#">开发者社区</a></li>
-            <li class="toggle"><a href="#">开放平台</a></li>
-            <li class="toggle"><a href="#">关于我们</a></li>
+            <li><a href="javascript:;" class="active">首页</a></li>
+            <li><a href="./src/pages/laya-family.html">Laya家族</a></li>
+            <li><a href="./src/pages/game.html">游戏</a></li>
+            <li><a href="./src/pages/information.html">新闻动态</a></li>
+            <li class="toggle"><a href="javascript:;">开发者中心</a></li>
+            <li class="toggle"><a href="javascript:;">开发者社区</a></li>
+            <li class="toggle"><a href="javascript:;">开放平台</a></li>
+            <li class="toggle"><a href="./src/pages/about.html">关于我们</a></li>
             <li class="dropdown more">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                 aria-expanded="false">更多 <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">开发者中心</a></li>
-                <li><a href="#">开发者社区</a></li>
-                <li><a href="#">开放平台</a></li>
-                <li><a href="#">关于我们</a></li>
+                <li><a href="javascript:;">开发者中心</a></li>
+                <li><a href="javascript:;">开发者社区</a></li>
+                <li><a href="javascript:;">开放平台</a></li>
+                <li><a href="./src/pages/about.html">关于我们</a></li>
               </ul>
             </li>
           </ul>
@@ -69,8 +71,8 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                 aria-expanded="false">Language <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">简体中文</a></li>
-                <li><a href="#">English</a></li>
+                <li><a href="javascript:;">简体中文</a></li>
+                <li><a href="javascript:;">English</a></li>
               </ul>
             </li>
           </ul>
@@ -94,13 +96,12 @@
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <img src="./src/assets/images/layabox-home/banner-01.jpg" alt="banner">
-            <div class="carousel-caption">
-            </div>
           </div>
           <div class="item">
             <img src="./src/assets/images/layabox-home/banner-01.jpg" alt="banner">
-            <div class="carousel-caption">
-            </div>
+          </div>
+          <div class="item">
+            <img src="./src/assets/images/layabox-home/banner-01.jpg" alt="banner">
           </div>
         </div>
 
@@ -122,36 +123,9 @@
           <div class="engine-l col-lg-9 col-md-6">
             <h2>LayaFlash<span>引擎</span></h2>
             <h3>让Flash技术变成开发HTML5产品的利器</h3>
-            <div class="engine-item item-01 col-lg-6">
-              <img src="./src/assets/images/layabox-home/engine-icon-01_03.png" alt="">
-              <div class="dec">
-                <h5>快速Flash产品转换</h5>
-                <p>Flash页游\手游仅需1个人7天即可转换为HTML5和APP游戏</p>
-              </div>
-            </div>
-            <div class="engine-item item-01 col-lg-6">
-              <img src="./src/assets/images/layabox-home/engine-icon-01_03.png" alt="">
-              <div class="dec">
-                <h5>快速Flash产品转换</h5>
-                <p>Flash页游\手游仅需1个人7天即可转换为HTML5和APP游戏</p>
-              </div>
-            </div>
-            <div class="engine-item item-01 col-lg-6 clearfix">
-              <img src="./src/assets/images/layabox-home/engine-icon-01_03.png" alt="">
-              <div class="dec">
-                <h5>快速Flash产品转换</h5>
-                <p>Flash页游\手游仅需1个人7天即可转换为HTML5和APP游戏</p>
-              </div>
-            </div>
-            <div class="engine-item item-01 col-lg-6">
-              <img src="./src/assets/images/layabox-home/engine-icon-01_03.png" alt="">
-              <div class="dec">
-                <h5>快速Flash产品转换</h5>
-                <p>Flash页游\手游仅需1个人7天即可转换为HTML5和APP游戏</p>
-              </div>
-            </div>
+            <!-- 使用模板的方式渲染 -->
           </div>
-          <div class="engine-r col-lg-3 col-md-6">
+          <div class="engine-r col-lg-3 col-md-6 visible-md-block visible-lg-block ">
             <img src="./src/assets/images/layabox-home/phone.jpg" alt="phone.jpg">
           </div>
         </div>
@@ -160,16 +134,13 @@
     <!-- layabox 优势 -->
     <section class="advantage">
       <div class="container row wrap_1000">
-        <div class="advantage-l col-lg-4">
-          <img src="./src/assets/images/layabox-home/advantage-lg.jpg" alt="">
-        </div>
-        <div class="advantage-r col-lg-8">
+        <div class="advantage-r col-sm-7 col-lg-8 col-lg-push-4">
           <h6 class="titlee">Layabox<span>优势</span></h6>
           <div class="media">
             <div class="media-left media-middle">
-              <a href="#">
+              <span>
                 <i class="media-object iconfont icon-dunpai"></i>
-              </a>
+              </span>
             </div>
             <div class="media-body media-middle">
               <p class="media-heading">快速上手，Flash程序员3小时掌握HTML5开发</p>
@@ -177,9 +148,9 @@
           </div>
           <div class="media">
             <div class="media-left media-middle">
-              <a href="#">
+              <span>
                 <i class="media-object iconfont icon-dunpai"></i>
-              </a>
+              </span>
             </div>
             <div class="media-body media-middle">
               <p class="media-heading">快速上手，Flash程序员3小时掌握HTML5开发</p>
@@ -187,9 +158,9 @@
           </div>
           <div class="media">
             <div class="media-left media-middle">
-              <a href="#">
+              <span>
                 <i class="media-object iconfont icon-dunpai"></i>
-              </a>
+              </span>
             </div>
             <div class="media-body media-middle">
               <p class="media-heading">快速上手，Flash程序员3小时掌握HTML5开发</p>
@@ -197,14 +168,17 @@
           </div>
           <div class="media">
             <div class="media-left media-middle">
-              <a href="#">
+              <span>
                 <i class="media-object iconfont icon-dunpai"></i>
-              </a>
-            </div>
+              </span>
+            </div> 
             <div class="media-body media-middle">
               <p class="media-heading">快速上手，Flash程序员3小时掌握HTML5开发</p>
             </div>
           </div>
+        </div>
+        <div class="advantage-l col-sm-5 col-lg-4 hidden-xs col-lg-pull-8">
+          <img src="./src/assets/images/layabox-home/advantage-lg.jpg" alt="">
         </div>
       </div>
     </section>
@@ -213,7 +187,40 @@
       <div class="container wrap_1000">
         <h2 class="family-title">Layabox产品家族</h2>
         <div class="product row">
-          <div class="product-item media col-lg-6">
+          <div class="product-item media col-sm-6 col-lg-6">
+            <div class="media-left media-top">
+              <div class="icon">
+                <img class="media-object" src="./src/assets/images/layabox-home/family-01.png" alt="...">
+              </div>
+            </div>
+            <div class="media-body">
+              <h6 class="media-heading">LayaAir</h6>
+              <p>使用Flash AS3语言开发H5的引擎框架，可直接在FB或FD中开发、调试、编译H5，也可快速将Flash页游\手游转换成H5游戏。</p>
+            </div>
+          </div>
+          <div class="product-item media col-sm-6 col-lg-6">
+            <div class="media-left media-top">
+              <div class="icon">
+                <img class="media-object" src="./src/assets/images/layabox-home/family-01.png" alt="...">
+              </div>
+            </div>
+            <div class="media-body">
+              <h6 class="media-heading">LayaAir</h6>
+              <p>使用Flash AS3语言开发H5的引擎框架，可直接在FB或FD中开发、调试、编译H5，也可快速将Flash页游\手游转换成H5游戏。</p>
+            </div>
+          </div>
+          <div class="product-item media col-sm-6 col-lg-6">
+            <div class="media-left media-top">
+              <div class="icon">
+                <img class="media-object" src="./src/assets/images/layabox-home/family-01.png" alt="...">
+              </div>
+            </div>
+            <div class="media-body">
+              <h6 class="media-heading">LayaAir</h6>
+              <p>使用Flash AS3语言开发H5的引擎框架，可直接在FB或FD中开发、调试、编译H5，也可快速将Flash页游\手游转换成H5游戏。</p>
+            </div>
+          </div>
+          <div class="product-item media col-sm-6 col-lg-6">
             <div class="media-left media-top">
               <div class="icon">
                 <img class="media-object" src="./src/assets/images/layabox-home/family-01.png" alt="...">
@@ -225,41 +232,6 @@
             </div>
           </div>
 
-          <div class="product-item media col-lg-6">
-            <div class="media-left media-top">
-              <div class="icon">
-                <img class="media-object" src="./src/assets/images/layabox-home/family-01.png" alt="...">
-              </div>
-            </div>
-            <div class="media-body">
-              <h6 class="media-heading">LayaAir</h6>
-              <p>使用Flash AS3语言开发H5的引擎框架，可直接在FB或FD中开发、调试、编译H5，也可快速将Flash页游\手游转换成H5游戏。</p>
-            </div>
-          </div>
-
-          <div class="product-item media col-lg-6">
-            <div class="media-left media-top">
-              <div class="icon">
-                <img class="media-object" src="./src/assets/images/layabox-home/family-01.png" alt="...">
-              </div>
-            </div>
-            <div class="media-body">
-              <h6 class="media-heading">LayaAir</h6>
-              <p>使用Flash AS3语言开发H5的引擎框架，可直接在FB或FD中开发、调试、编译H5，也可快速将Flash页游\手游转换成H5游戏。</p>
-            </div>
-          </div>
-
-          <div class="product-item media col-lg-6">
-            <div class="media-left media-top">
-              <div class="icon">
-                <img class="media-object" src="./src/assets/images/layabox-home/family-01.png" alt="...">
-              </div>
-            </div>
-            <div class="media-body">
-              <h6 class="media-heading">LayaAir</h6>
-              <p>使用Flash AS3语言开发H5的引擎框架，可直接在FB或FD中开发、调试、编译H5，也可快速将Flash页游\手游转换成H5游戏。</p>
-            </div>
-          </div>
 
         </div>
       </div>
@@ -268,29 +240,18 @@
     <section class="game">
       <div class="container wrap_1000">
         <div class="row">
-          <div class="title col-lg-12">
-            <h5 class="col-lg-8">采用Layabox引擎的精彩游戏</h5>
-            <a href="javascript:;" class="more col-lg-4 text-right">更多</a>
+          <div class="title col-lg-12 text-right">
+            <h5 class="col-xs-10 col-sm-8 col-md-8 col-lg-8">采用Layabox引擎的精彩游戏</h5>
+            <a href="javascript:;" class="more col-xs-2 col-sm-4 col-md-4 col-lg-4 text-right">更多</a>
           </div>
           <div class="game-item-wrap">
-            <div class="left col-lg-4">
+            <div class="left col-sm-4 col-md-4 col-lg-4 ">
               <!-- <video src=""></video> -->
               <img src="./src/assets/images/layabox-home/game-video.jpg" alt="">
             </div>
-            <ul class="right col-lg-8">
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              <li class="game-item game-01 col-lg-2 text-center"><img src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li>
-              
+            <ul class="right clearfix col-sm-8  col-md-8 col-lg-8">
+              <!-- <li class="game-item game-01 text-center col-lg-2 col-xs-4 col-md-3"><img
+                  src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">猎刃2</a></li> -->
             </ul>
           </div>
         </div>
@@ -303,62 +264,32 @@
           合作伙伴<span>(排序不分先后)</span>
         </h5>
         <ul class="row">
-          <li class="link link-01 col-lg-2">
+          <li class="link link-01 col-xs-6 col-sm-2 col-lg-2">
             <a href="javascript:;">
               <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
             </a>
           </li>
-          <li class="link link-01 col-lg-2">
+          <li class="link link-01 col-xs-6 col-sm-2 col-lg-2">
             <a href="javascript:;">
               <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
             </a>
           </li>
-          <li class="link link-01 col-lg-2">
+          <li class="link link-01 col-xs-6 col-sm-2 col-lg-2">
             <a href="javascript:;">
               <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
             </a>
           </li>
-          <li class="link link-01 col-lg-2">
+          <li class="link link-01 col-xs-6 col-sm-2 col-lg-2">
             <a href="javascript:;">
               <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
             </a>
           </li>
-          <li class="link link-01 col-lg-2">
+          <li class="link link-01 col-xs-6 col-sm-2 col-lg-2">
             <a href="javascript:;">
               <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
             </a>
           </li>
-          <li class="link link-01 col-lg-2">
-            <a href="javascript:;">
-              <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
-            </a>
-          </li>
-          <li class="link link-01 col-lg-2">
-            <a href="javascript:;">
-              <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
-            </a>
-          </li>
-          <li class="link link-01 col-lg-2">
-            <a href="javascript:;">
-              <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
-            </a>
-          </li>
-          <li class="link link-01 col-lg-2">
-            <a href="javascript:;">
-              <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
-            </a>
-          </li>
-          <li class="link link-01 col-lg-2">
-            <a href="javascript:;">
-              <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
-            </a>
-          </li>
-          <li class="link link-01 col-lg-2">
-            <a href="javascript:;">
-              <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
-            </a>
-          </li>
-          <li class="link link-01 col-lg-2">
+          <li class="link link-01 col-xs-6 col-sm-2 col-lg-2">
             <a href="javascript:;">
               <img src="./src/assets/images/layabox-home/friendship-link-01.jpg" alt="" />
             </a>
@@ -371,27 +302,27 @@
   <!-- S footer content -->
   <footer>
     <div class="container-fluid row wrap_1000">
-      <div class=" footer-left col-lg-10 col-md-10">
-        <ul class="footer-link clearfix col-lg-12">
+      <div class="footer-left col-lg-10 col-md-10">
+        <ul class="footer-link clearfix col-lg-10 col-md-12">
           <li class="pull-left"><a href="javascript:;">公司简介</a></li>
           <li class="pull-left"><a href="javascript:;">联系方式</a></li>
           <li class="pull-left"><a href="javascript:;">人才招聘</a></li>
         </ul>
-        <p class="copyright col-lg-12">All Copyright Reserved by Layabox Inc. 京ICP备15008163号-1</p>
+        <p class="copyright col-lg-12 col-md-12">All Copyright Reserved by Layabox Inc. 京ICP备15008163号-1</p>
       </div>
-      <div class="footer-right col-lg-2 col-md-2">
-        <ul class="fllow">
-          <li class="item-01 col-lg-4 col-md-4">
+      <div class="footer-right col-lg-2 col-md-2 visible-lg-block">
+        <ul class="fllow clearfix hidden-sm">
+          <li class="item-01 col-lg-4 col-md-4 col-xs-2">
             <a href="javascript:;">
               <i class="iconfont icon-185078emailmailstreamline"></i>
             </a>
           </li>
-          <li class="item-02 col-lg-4 col-md-4">
+          <li class="item-02 col-lg-4 col-md-4 col-xs-2">
             <a href="javascript:;">
               <i class="iconfont icon-weixin"></i>
             </a>
           </li>
-          <li class="item-03 col-lg-4 col-md-4">
+          <li class="item-03 col-lg-4 col-md-4 col-xs-2">
             <a href="javascript:;">
               <i class="iconfont icon-tubiao215"></i>
             </a>
@@ -403,13 +334,138 @@
   <!-- E footer content -->
 </body>
 <!-- jquery -->
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" async crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" >
 </script>
-<!-- 使用cdn加速 -->
-<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" async crossorigin="anonymous">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js">
+</script>
+<script src="./src/js/template.js"></script>
+<script src="./src/js/index.js"></script>
+
+<!-- layaFlash 引擎模板 -->
+<script type="text/html" id="engine-t">
+  {{each engineList as val index}}
+  <div class="engine-item item-01  col-sm-6 col-md-12 col-lg-6">
+    <img src="./src/assets/images/layabox-home/engine-icon-01_03.png" alt="">
+    <div class="dec">
+      <h5>{{val.zhubiaoti}}</h5>
+      <p>{{val.dec}}</p>
+    </div>
+  </div>
+  {{/each}}
 </script>
 
+<!--  -->
+<script>
+  $(function () {
+    // 轮播图
+    $('.carousel').carousel({
+      interval: 3000
+    })
+  })
+
+  // // 基于模板名渲染模板
+  // template(filename, data);
+
+  // // 将模板源代码编译成函数
+  // template.compile(source, options);
+
+  // // 将模板源代码编译成函数并立刻执行
+  // template.render(source, data, options);
+
+  var layaObj = {
+    code: 1,
+    engineList: [{
+        id: 1,
+        zhubiaoti: "快速Flash产品转换",
+        dec: "Flash页游\手游仅需1个人7天即可转换为HTML5和APP游戏"
+      },
+      {
+        id: 2,
+        zhubiaoti: "快速Flash产品转换",
+        dec: "Flash页游\手游仅需1个人7天即可转换为HTML5和APP游戏"
+      },
+      {
+        id: 3,
+        zhubiaoti: "快速Flash产品转换",
+        dec: "Flash页游\手游仅需1个人7天即可转换为HTML5和APP游戏"
+      },
+      {
+        id: 4,
+        zhubiaoti: "快速Flash产品转换",
+        dec: "Flash页游\手游仅需1个人7天即可转换为HTML5和APP游戏"
+      }
+    ],
+    layaEngineGame: [{
+        id: 1,
+        imgUrl: '',
+        gameName: '猎刃2'
+      },
+      {
+        id: 2,
+        imgUrl: '',
+        gameName: '上吧公主'
+      },
+      {
+        id: 3,
+        imgUrl: '',
+        gameName: '醉西游'
+      },
+      {
+        id: 4,
+        imgUrl: '',
+        gameName: '魔卡幻想'
+      },
+      {
+        id: 5,
+        imgUrl: '',
+        gameName: '超能战队'
+      },
+      {
+        id: 6,
+        imgUrl: '',
+        gameName: '刀塔大菠萝'
+      }, {
+        id: 1,
+        imgUrl: '',
+        gameName: '猎刃2'
+      },
+      {
+        id: 2,
+        imgUrl: '',
+        gameName: '上吧公主'
+      },
+      {
+        id: 3,
+        imgUrl: '',
+        gameName: '醉西游'
+      },
+      {
+        id: 4,
+        imgUrl: '',
+        gameName: '魔卡幻想'
+      },
+      {
+        id: 5,
+        imgUrl: '',
+        gameName: '超能战队'
+      },
+      {
+        id: 6,
+        imgUrl: '',
+        gameName: '刀塔大菠萝'
+      }
+    ]
+  }
+  var engineTpl = template("engine-t", layaObj);
+  $(".engine-l").append(engineTpl);
+  var engineGameTpl = '';
+  for (var key in layaObj.layaEngineGame) {
+    engineGameTpl +=
+      `<li class="game-item game-01 text-center col-lg-2 col-xs-4 col-md-3"><img
+                  src="./src/assets/images/layabox-home/game-icon-01.png" alt=""><a href="javascript:;">${layaObj.layaEngineGame[key].gameName}</a></li>`
+  }
+  $('.game .right').append(engineGameTpl);
+</script>
 
 </html>
